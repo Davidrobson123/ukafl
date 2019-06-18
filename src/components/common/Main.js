@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import '../../App.scss';
 import ArrowDark from '../../assets/arrow-object-dark-red.png';
-import GooglePlay from '../../assets/google-play.svg';
-import AppStore from '../../assets/app-store.svg';
+import Facebook from '../../assets/facebook.png';
+import Twitter from '../../assets/twitter.png';
 import Background from '../../assets/img-02.jpg';
 import Logo1 from '../../assets/logo-1.png';
 import Logo2 from '../../assets/logo-2.png';
 import videos from '../../assets/UKAFL_Intro_Master.mp4';
+import LatestPosts from "../main/LatestPosts";
 
 export default class Main extends Component {
 
@@ -33,91 +34,22 @@ export default class Main extends Component {
           </header>
 
           <section className="section-small-padding background-dark text-center">
+            <h3 className="text-white text-size-40 text-m-size-30 margin-bottom-20">Like us on <b>Social Media</b></h3>
             <div className="line">
               <div className="m-10 l-6 xl-4 center">
                 <div className="margin">
                   <a className="s-12 m-6 margin-s-bottom" href="/">
-                    <img className="full-img right" src={GooglePlay} alt=""/>
+                    <img className="facebook right" src={Facebook} alt=""/>
                   </a>
                   <a className="s-12 m-6" href="/">
-                    <img className="full-img" src={AppStore} alt="" />
+                    <img className="twitter" src={Twitter} alt="" />
                   </a>
                 </div>
               </div>
             </div>
           </section>
 
-          <section className="section-top-padding background-white">
-            <div className="line text-center">
-              <i className="icon-sli-heart text-primary text-size-40"></i>
-              <h2 className="text-dark text-size-50 text-m-size-40">Template <b>Features</b></h2>
-              <hr className="break background-primary break-small break-center margin-bottom-50" />
-            </div>
-            <div className="line">
-              <div className="margin2x">
-                <div className="s-12 m-6 l-4 margin-bottom-60">
-                  <div className="float-left">
-                    <i className="icon-sli-equalizer text-primary text-size-40 text-line-height-1"></i>
-                  </div>
-                  <div className="margin-left-60">
-                    <h3 className="text-strong text-size-20 text-line-height-1 margin-bottom-20">Unlimited Color Variants</h3>
-                    <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, vel illum dolore nulla facilisis</p>
-                    <a className="text-more-info text-primary" href="/">Read more</a>
-                  </div>
-                </div>
-                <div className="s-12 m-6 l-4 margin-bottom-60">
-                  <div className="float-left">
-                    <i className="icon-sli-layers text-primary text-size-40 text-line-height-1"></i>
-                  </div>
-                  <div className="margin-left-60">
-                    <h3 className="text-strong text-size-20 text-line-height-1 margin-bottom-20">Many Reusable Elements</h3>
-                    <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, vel illum dolore nulla facilisis</p>
-                    <a className="text-more-info text-primary" href="/">Read more</a>
-                  </div>
-                </div>
-                <div className="s-12 m-6 l-4 margin-bottom-60">
-                  <div className="float-left">
-                    <i className="icon-sli-share text-primary text-size-40 text-line-height-1"></i>
-                  </div>
-                  <div className="margin-left-60">
-                    <h3 className="text-strong text-size-20 text-line-height-1 margin-bottom-20">Clean Modern Code</h3>
-                    <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, vel illum dolore nulla facilisis</p>
-                    <a className="text-more-info text-primary" href="/">Read more</a>
-                  </div>
-                </div>
-                <div className="s-12 m-6 l-4 margin-m-bottom-60">
-                  <div className="float-left">
-                    <i className="icon-sli-paper-plane text-primary text-size-40 text-line-height-1"></i>
-                  </div>
-                  <div className="margin-left-60">
-                    <h3 className="text-strong text-size-20 text-line-height-1 margin-bottom-20">Parallax Background</h3>
-                    <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, vel illum dolore nulla facilisis</p>
-                    <a className="text-more-info text-primary" href="/">Read more</a>
-                  </div>
-                </div>
-                <div className="s-12 m-6 l-4 margin-m-bottom-60">
-                  <div className="float-left">
-                    <i className="icon-sli-diamond text-primary text-size-40 text-line-height-1"></i>
-                  </div>
-                  <div className="margin-left-60">
-                    <h3 className="text-strong text-size-20 text-line-height-1 margin-bottom-20">Responsive Layoute</h3>
-                    <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, vel illum dolore nulla facilisis</p>
-                    <a className="text-more-info text-primary" href="/">Read more</a>
-                  </div>
-                </div>
-                <div className="s-12 m-6 l-4 margin-m-bottom-60">
-                  <div className="float-left">
-                    <i className="icon-sli-rocket text-primary text-size-40 text-line-height-1"></i>
-                  </div>
-                  <div className="margin-left-60">
-                    <h3 className="text-strong text-size-20 text-line-height-1 margin-bottom-20">And many more...</h3>
-                    <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, vel illum dolore nulla facilisis</p>
-                    <a className="text-more-info text-primary" href="/">Read more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <LatestPosts/>
 
           <section className="background-primary full-width">
             <div className="m-12 l-6 xl-5 xxl-4">
@@ -176,14 +108,14 @@ export default class Main extends Component {
 
           <section className="section-small-padding background-dark text-center">
             <div className="line">
-              <h2 className="text-white text-size-50 text-m-size-40 margin-bottom-20">Get <b>Free Version</b></h2>
+              <h2 className="text-white text-size-50 text-m-size-40 margin-bottom-20">Like us on <b>Social Media</b></h2>
               <div className="m-10 l-6 xl-4 center">
                 <div className="margin">
                   <a className="s-12 m-6 margin-s-bottom" href="/">
-                    <img className="full-img right" src={GooglePlay} alt="" />
+                    <img className="facebook right" src={Facebook} alt="" />
                   </a>
                   <a className="s-12 m-6" href="/">
-                    <img className="full-img" src={AppStore} alt="" />
+                    <img className="twitter" src={Twitter} alt="" />
                   </a>
                 </div>
               </div>
