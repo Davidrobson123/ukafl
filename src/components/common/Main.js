@@ -23,15 +23,15 @@ export default class Main extends Component {
     
     return (
       <div className="main">
-          <header className="section-top-padding background-image text-center">
+          <div className="section-top-padding background-image text-center front-video">
             <h1 className="text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40 margin-top-130">Save your Time and Keep Calm</h1>
             <p className="text-white">Duis autem vel eum iriure dolor in hendrerit in vulputate velit<br /> esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
             <i className="slow icon-sli-arrow-down text-white margin-top-20 text-size-16"></i>
             <video className="margin-top-20 center intro-vid" loop autoPlay>
               <source src={videos} type="video/mp4"/>
             </video>
-              <img className="arrow-object" src={ArrowDark} alt="" />
-          </header>
+            <img className="arrow-object" src={ArrowDark} alt="" />
+          </div>
 
           <section className="section-small-padding background-dark text-center">
             <h3 className="text-white text-size-40 text-m-size-30 margin-bottom-20">Like us on <b>Social Media</b></h3>
