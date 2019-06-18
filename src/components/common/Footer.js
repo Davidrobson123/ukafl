@@ -3,7 +3,7 @@ import '../../App.scss';
 
 function Footer() {
   return (
-    <footer>2019 The Leighton Group</footer>
+    <footer>All right reserved (UKAFL)</footer>
   );
 }
 
