@@ -83,7 +83,7 @@ export default class Main extends Component {
 
           <section className="section-small-padding background-dark text-center">
             <div className="line">
-              <h2 className="text-white text-size-50 text-m-size-40 margin-bottom-20">Like us on <b>Social Media</b></h2>
+              <h3 className="text-white text-size-50 text-m-size-40 margin-bottom-20">Like us on <b>Social Media</b></h3>
               <div className="m-10 l-6 xl-4 center">
                 <div className="margin">
                   <a className="s-12 m-6 margin-s-bottom" href="/">
