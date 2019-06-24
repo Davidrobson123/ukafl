@@ -29,7 +29,7 @@ export default class Main extends Component {
 
           <section className="background-primary full-width">
             <div className="m-12 l-6 xl-5 xxl-4">
-              <img className="full-img" src={Background}/>
+              <img className="full-img" src={Background} />
             </div>
             <div className="m-12 l-6 xl-7 xxl-8">
               <div className="l-12 xl-11 xxl-8 padding-2x">
