@@ -1710,11 +1710,12 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   }
   .top-nav li ul li ul li a { background:none repeat scroll 0 0 #456274;}
   .nav-text {
+    float: right;
+    margin: 20px;
     color:#fff;
     display:block;
     font-size:1.2rem;
     line-height:3;
-    margin-right:0.625rem;
     max-width:100%;
     text-align:center;
     vertical-align:middle;
@@ -1919,7 +1920,7 @@ nav.breadcrumb-nav ul li:last-child:after {content:"";}
   .s-9 {width:75%;}
   .s-10 {width:83.3333%;}
   .s-11 {width:91.6666%;}
-  .s-12 {width:100%}
+  .s-12 {}
 }
 .center {
   float:none;
@@ -3036,7 +3037,6 @@ form.customform input:hover, form.customform textarea:hover, form.customform sel
     display: block;
     font-size: 1.2rem;
     line-height: 3rem;
-    margin-right: 0.625rem;
     max-width: 100%;
     text-align: center;
     vertical-align: middle;
@@ -3045,8 +3045,6 @@ form.customform input:hover, form.customform textarea:hover, form.customform sel
     color: #454545;
     display: inline-block;
     font-size: 3rem;
-    margin-left: 0;
-    margin-top: 30px;
   }
   .top-nav li a, .background-white .top-nav li a {
     background: #454545 none repeat scroll 0 0;
@@ -3536,15 +3534,15 @@ nav.fixed .left-menu, nav.fixed .right-menu {
   float: left;
 }
 .logo-menu {
-  width: 100px;
+  width: 120px;
 }
 .left-menu, .right-menu {
   padding-top: 20px;
-  width: calc(50% - 50px);
+  width: calc(50% - 60px);
 }
 .logo img {
   margin: 0 auto;
-  width: 88px;
+  width: 120px;
   position: relative;
   top: 12px;
 }
@@ -3680,6 +3678,9 @@ a.tab-label.active-btn {
 }
 
 @media screen and (max-width:768px) {
+  .facebook, .twitter {
+    width: 50px;
+  }
   header.position-absolute {
     background: #fff none repeat scroll 0 0;
     position: relative;
@@ -3695,13 +3696,12 @@ a.tab-label.active-btn {
     display:none;
   }
   .logo img.logo-dark {
-    display:block;
+    width: 88px;
+    display: inline-block;
+    margin-left: 10px;
   }
   .nav-text::after {
     color: #454545;
-  }
-  .nav-text {
-    margin-right: 0;
   }
   .fixed {
     position: relative;
