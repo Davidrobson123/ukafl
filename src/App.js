@@ -6,11 +6,11 @@ import Main from './components/common/Main';
 
 function App() {
   return (
-    <body className="size-1280">
+    <div className="size-1280">
         <Header/>
         <Main/>
         <Footer/>
-    </body>
+    </div>
   );
 }
 

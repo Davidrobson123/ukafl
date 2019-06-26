@@ -1,54 +1,49 @@
-import React, {Component} from 'react';
+import React, { useState, useEffect } from 'react';
+import Posts from './Posts';
+import Pagination from './Pagination';
+import axios from 'axios';
 import '../../App.scss';
 
-export default class LatestPosts extends Component {
+const LatestPosts = () => {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(4);
 
-  constructor(props) {
-    super(props);
-  }
+  useEffect(() => {
+    const fetchPosts = async () => {
+      setLoading(true);
+      const res = await axios.get('http://admin.ukafl.com/wp-json/wp/v2/posts/');
+      console.log(res.data)
+      setPosts(res.data);
+      setLoading(false);
+    };
 
-  componentDidMount() {
+    fetchPosts();
 
-  }
+  }, []);
 
-  render() {
+  // Get current posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
-    return (
-      <div className="posts">
-        <h1 className="text-size-50"><b>Latest Posts</b></h1>
-        <div className="posts-grid">
-          <div className='row'>
-            <div className='column'>
-              <div className='flex-item'>
-                <div>Rooney Joins UKAFL team</div>
-                <div className="post-content">
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a est nec metus vestibulum luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eu nulla vitae risus gravida condimentum semper quis turpis. Donec ipsum est, elementum a purus et, pretium dignissim augue. In sit amet ipsum tempor, fringilla justo vel, egestas ex. Curabitur bibendum felis in tellus vehicula tincidunt. Pellentesque nisi urna, condimentum eu nisl in, egestas finibus ante.
-                </div>
-              </div>
-              <div className='flex-item'>
-                <div>Rooney Joins UKAFL team</div>
-                <div className="post-content">
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a est nec metus vestibulum luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eu nulla vitae risus gravida condimentum semper quis turpis. Donec ipsum est, elementum a purus et, pretium dignissim augue. In sit amet ipsum tempor, fringilla justo vel, egestas ex. Curabitur bibendum felis in tellus vehicula tincidunt. Pellentesque nisi urna, condimentum eu nisl in, egestas finibus ante.
-                </div>
-              </div>
-            </div>
-            <div className='column'>
-              <div className='flex-item'>
-                <div>Rooney Joins UKAFL team</div>
-                <div className="post-content">
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a est nec metus vestibulum luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eu nulla vitae risus gravida condimentum semper quis turpis. Donec ipsum est, elementum a purus et, pretium dignissim augue. In sit amet ipsum tempor, fringilla justo vel, egestas ex. Curabitur bibendum felis in tellus vehicula tincidunt. Pellentesque nisi urna, condimentum eu nisl in, egestas finibus ante.
-                </div>
-              </div>
-              <div className='flex-item'>
-                <div>Rooney Joins UKAFL team</div>
-                <div className="post-content">
-                  Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a est nec metus vestibulum luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eu nulla vitae risus gravida condimentum semper quis turpis. Donec ipsum est, elementum a purus et, pretium dignissim augue. In sit amet ipsum tempor, fringilla justo vel, egestas ex. Curabitur bibendum felis in tellus vehicula tincidunt. Pellentesque nisi urna, condimentum eu nisl in, egestas finibus ante.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  // Change page
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  return (
+    <div className="posts">
+      <h1 className="text-size-50"><b>Latest Posts</b></h1>
+      <div className="posts-grid">
+      <Posts posts={currentPosts} loading={loading} />
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+      />
       </div>
-    )
-  };
-}
+    </div>
+  );
+};
+
+export default LatestPosts;
