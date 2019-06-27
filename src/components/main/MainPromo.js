@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../../App.scss';
 import ArrowDark from '../../assets/arrow-object-dark-red.png';
-import videos from '../../assets/UKAFL_Intro_Master.mp4';
+import YouTube from 'react-youtube';
 import Facebook from '../../assets/facebook.png';
 import Twitter from '../../assets/twitter.png';
 
@@ -17,13 +17,21 @@ export default class MainPromo extends Component {
 
   render() {
 
+      const opts = {
+          playerVars: {
+              autoplay: 1
+          }
+      };
+
     return (
       <div>
         <div className="section-top-padding background-image text-center front-video">
           <h1 className="text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40 margin-top-70">United Kingdom <br /> American Football League</h1>
-          <video className="margin-top-20 center intro-vid" loop autoPlay>
-            <source src={videos} type="video/mp4"/>
-          </video>
+            <YouTube
+                videoId="tHMrtV0txh0"
+                opts={opts}
+                className="margin-top-20 center intro-vid"
+            />
           <img className="arrow-object" src={ArrowDark} alt="" />
         </div>
 
