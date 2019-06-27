@@ -98,10 +98,15 @@
 
 .intro-vid {
   display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
+iframe {
+  display: inline !important;
+}
 @media screen and (max-width:768px) {
-  video.intro-vid {
+  .intro-vid {
     display: none !important;
   }
 }
