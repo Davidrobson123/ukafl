@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import '../../App.scss';
 import ArrowDark from '../../assets/arrow-object-dark-red.png';
 import YouTube from 'react-youtube';
-import Facebook from '../../assets/facebook.png';
-import Twitter from '../../assets/twitter.png';
+import SocialLinks from "./SocialLinks";
 
 export default class MainPromo extends Component {
 
@@ -15,10 +14,15 @@ export default class MainPromo extends Component {
 
   }
 
+  _onReady(event) {
+    event.target.playVideo();
+  }
+
   render() {
 
       const opts = {
           playerVars: {
+              loop: 1,
               autoplay: 1
           }
       };
@@ -31,26 +35,13 @@ export default class MainPromo extends Component {
             <YouTube
                 videoId="tHMrtV0txh0"
                 opts={opts}
+                onEnd={this._onReady}
             />
             </div>
           <img className="arrow-object" src={ArrowDark} alt="" />
         </div>
 
-        <section className="section-small-padding background-dark text-center">
-          <h3 className="text-white text-size-40 text-m-size-30 margin-bottom-20">Like us on <b>Social Media</b></h3>
-          <div className="line">
-            <div className="m-10 l-6 xl-4 center">
-              <div className="margin">
-                <a className="s-12 m-6 margin-s-bottom" href="/">
-                  <img className="facebook right" src={Facebook} alt=""/>
-                </a>
-                <a className="s-12 m-6" href="/">
-                  <img className="twitter" src={Twitter} alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <SocialLinks/>
       </div>
     )
   };

@@ -1,7 +1,6 @@
 .pagination {
   margin: 0 auto;
-  width: 60%;
-  text-align: center;
+  width: 100px;
   color: black;
 
   .page-item {
@@ -10,5 +9,6 @@
     width: 40px;
     border: 2px solid black;
     padding: 5px;
+    float:left;
   }
 }
