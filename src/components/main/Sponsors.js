@@ -6,7 +6,8 @@ import warren from '../../assets/warren.png';
 import revamped from '../../assets/revamped.png';
 import ngp from '../../assets/ngp.png';
 import cola from '../../assets/40cola.png';
-
+import fox from '../../assets/fox.png';
+import print from '../../assets/print.png';
 
 export default class Sponsors extends Component {
 
@@ -20,12 +21,12 @@ export default class Sponsors extends Component {
 
   render() {
 
-    let sponsors = [growth, homing, warren, revamped, ngp, cola];
+    let sponsors = [growth, homing, warren, revamped, ngp, cola, fox, print];
 
     return (
-      <section className="section-small-padding background-primary">
+      <section className="section-small-padding background-primary sponsors">
         <div className="margin2x">
-          {sponsors.map(sponsor => <div className="m-4 l-2">
+          {sponsors.map(sponsor => <div className="m-2">
             <img className="margin-bottom sponsor" src={sponsor}/>
           </div>)}
         </div>

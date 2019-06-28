@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../../App.scss';
-import Background from '../../assets/background-ukafl.png';
 import LatestPosts from "../main/LatestPosts";
 import MainPromo from "../main/MainPromo";
 import SocialLinks from "../main/SocialLinks";
