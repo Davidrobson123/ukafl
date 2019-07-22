@@ -4,6 +4,8 @@ import LatestPosts from "../main/LatestPosts";
 import MainPromo from "../main/MainPromo";
 import SocialLinks from "../main/SocialLinks";
 import Sponsors from "../main/Sponsors";
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 export default class Main extends Component {
 
@@ -19,6 +21,7 @@ export default class Main extends Component {
     
     return (
       <div className="main">
+          <Header />
 
           <MainPromo/>
 
@@ -27,6 +30,8 @@ export default class Main extends Component {
           <Sponsors/>
 
           <SocialLinks />
+
+          <Footer />
 
       </div>
     )
