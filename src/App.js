@@ -7,9 +7,7 @@ import Main from './components/common/Main';
 function App() {
   return (
     <div className="size-1280">
-        <Header/>
-        <Main/>
-        <Footer/>
+
     </div>
   );
 }

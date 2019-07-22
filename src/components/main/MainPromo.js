@@ -12,6 +12,14 @@ export default class MainPromo extends Component {
 
   componentDidMount() {
 
+    const script = document.createElement("script");
+
+    script.src = "https://api.leaguerepublic.com/l/client/api/cs1.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    window.lrcode = '922452112'
   }
 
   _onReady(event) {
@@ -19,7 +27,6 @@ export default class MainPromo extends Component {
   }
 
   render() {
-
       const opts = {
           playerVars: {
               loop: 1,
@@ -40,7 +47,7 @@ export default class MainPromo extends Component {
             </div>
           <img className="arrow-object" src={ArrowDark} alt="" />
         </div>
-
+        <div id="lrep922452112" style={{width: '350px'}}>Data loading....<a href="http://ukamericanfootballleague.leaguerepublic.com/l/fg/1_578906020.html">click here for National League</a><br/><br/><a href="http://www.leaguerepublic.com">LeagueRepublic</a></div>
         <SocialLinks/>
       </div>
     )
