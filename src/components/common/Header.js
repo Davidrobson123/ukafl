@@ -18,9 +18,9 @@ function Header() {
 
           <div className="top-nav left-menu">
             <ul className="right top-ul chevron">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="about-us.html">About Us</a></li>
-              <li><a href="services.html">Our Services</a></li>
+              <li><a href="/standings">Standings</a></li>
             </ul>
           </div>
 
