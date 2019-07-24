@@ -134,8 +134,17 @@ iframe {
   padding: 50px;
 
   div {
+    width: 50%;
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .league-standings {
+    div {
+      width: 100%;
+    }
   }
 }
 

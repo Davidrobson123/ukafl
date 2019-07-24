@@ -21,7 +21,8 @@ export default class Standings extends Component {
 
       document.body.appendChild(script);
 
-      window.lrcode = '189826185'
+      window.lrcode = '775328754'
+
     }
 
     render() {
@@ -33,7 +34,7 @@ export default class Standings extends Component {
                 <PageHeader title="Standings / Fixtures"/>
 
                 <div className="league-standings">
-                    <div  id="lrep189826185" style={{width: '50%'}} >Data Loading...</div>
+                    <div id="lrep775328754">Data Loading...</div>
                 </div>
 
                 <Sponsors/>
