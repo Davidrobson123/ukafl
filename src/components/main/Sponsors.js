@@ -25,8 +25,8 @@ export default class Sponsors extends Component {
 
     return (
       <section className="section-small-padding background-primary sponsors">
-        <div className="margin2x">
-          {sponsors.map(sponsor => <div className="m-2">
+        <div className="margin2x sponsors-wrapper">
+          {sponsors.map(sponsor => <div className="l-1 m-1 s-6">
             <img className="margin-bottom sponsor" src={sponsor}/>
           </div>)}
         </div>

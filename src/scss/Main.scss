@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.sponsors-wrapper {
+  margin-left: 23% !important;
+}
+
 
 ///// Social media //////
 
@@ -130,6 +134,10 @@ iframe {
   display: inline !important;
 }
 @media screen and (max-width:768px) {
+
+  .sponsors-wrapper {
+    margin-left: 0 !important;
+  }
 
   .front-video {
     h1 {
