@@ -98,6 +98,13 @@
   .row {
     width: 100%;
   }
+
+  .posts-grid { margin: 0;}
+
+
+  .youtube {
+    height: 50px;
+  }
 }
 
 ////////////
@@ -106,6 +113,10 @@
 
 .front-video {
   position:relative;
+
+  h1 {
+    margin-top: 70px;
+  }
 }
 
 
@@ -119,8 +130,20 @@ iframe {
   display: inline !important;
 }
 @media screen and (max-width:768px) {
+
+  .front-video {
+    h1 {
+      margin-top: 0;
+    }
+  }
+
   .intro-vid {
     display: none !important;
+
+    iframe {
+      width: 90%;
+      height: 90%;
+    }
   }
 }
 
