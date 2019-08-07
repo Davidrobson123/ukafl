@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
 import '../../App.scss';
+import PageHeader from "../main/PageHeader";
+import SocialLinks from "../main/SocialLinks";
+import Sponsors from "../main/Sponsors";
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 export default class About extends Component {
 
@@ -14,9 +19,17 @@ export default class About extends Component {
     render() {
 
         return (
-            <div>
+          <div className="main">
+              <Header />
 
-            </div>
+              <PageHeader title="About Us"/>
+
+              <Sponsors/>
+
+              <SocialLinks />
+
+              <Footer />
+          </div>
         )
     };
 }
