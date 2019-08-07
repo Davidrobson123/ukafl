@@ -9,7 +9,7 @@ function Header() {
       <nav className="background-transparent background-primary-dott full-width sticky">
         <div className="top-nav">
           <div className="logo hide-l hide-xl hide-xxl">
-            <a href="index.html" className="logo">
+            <a href="/" className="logo">
               <img className="logo-white" src={logo} alt="" />
                 <img className="logo-dark" src={logodark} alt="" />
             </a>
@@ -19,8 +19,7 @@ function Header() {
           <div className="top-nav left-menu">
             <ul className="right top-ul chevron">
               <li><a href="/">Home</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="/standings">Standings</a></li>
+              <li><a href="/about">About Us</a></li>
             </ul>
           </div>
 
@@ -32,15 +31,16 @@ function Header() {
           </ul>
           <div className="top-nav right-menu">
             <ul className="top-ul chevron">
-              <li>
-                <a>Products</a>
-                <ul>
-                  <li><a>Product 1</a></li>
-                  <li><a>Product 2</a></li>
-                </ul>
-              </li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/standings">Standings</a></li>
+              {/*<li>*/}
+                {/*<a>Products</a>*/}
+                {/*<ul>*/}
+                  {/*<li><a>Product 1</a></li>*/}
+                  {/*<li><a>Product 2</a></li>*/}
+                {/*</ul>*/}
+              {/*</li>*/}
+              {/*<li><a href="gallery.html">Gallery</a></li>*/}
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>

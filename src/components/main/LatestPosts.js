@@ -14,7 +14,6 @@ const LatestPosts = () => {
     const fetchPosts = async () => {
       setLoading(true);
       const res = await axios.get('http://admin.ukafl.com/wp-json/wp/v2/posts/');
-      console.log(res.data)
       setPosts(res.data);
       setLoading(false);
     };

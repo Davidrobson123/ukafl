@@ -17,7 +17,7 @@ const Posts = ({ posts, loading }) => {
   return (
       <div className='row'>
       {postColumns.map(post => (
-        <div className='column'>
+        <div key={post[0].id} className='column'>
           <div key={post[0].id} className='flex-item'>
             <div>{post[0].title.rendered}</div>
             <div className="post-content">

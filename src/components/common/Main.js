@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../../App.scss';
 import LatestPosts from "../main/LatestPosts";
 import MainPromo from "../main/MainPromo";
@@ -7,18 +7,8 @@ import Sponsors from "../main/Sponsors";
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 
-export default class Main extends Component {
+const Main = props => {
 
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-
-  }
-
-  render() {
-    
     return (
       <div className="main">
           <Header />
@@ -35,5 +25,6 @@ export default class Main extends Component {
 
       </div>
     )
-  };
 }
+
+export default Main;

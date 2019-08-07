@@ -8,10 +8,6 @@ import Footer from '../../components/common/Footer';
 
 export default class Standings extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
 
       const script = document.createElement("script");

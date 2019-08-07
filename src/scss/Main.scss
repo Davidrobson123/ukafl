@@ -6,7 +6,7 @@
 }
 
 .sponsors-wrapper {
-  margin-left: 23% !important;
+  //margin-left: 23% !important;
 }
 
 
@@ -133,7 +133,7 @@
 iframe {
   display: inline !important;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 
   .sponsors-wrapper {
     margin-left: 0 !important;
@@ -150,7 +150,7 @@ iframe {
 
     iframe {
       width: 90%;
-      height: 90%;
+      height: 70%;
     }
   }
 }
@@ -180,3 +180,87 @@ iframe {
 }
 
 /////////////////
+
+
+///// About us /////
+
+.aboutus {
+  background-color: #444;
+  font-size: 24px;
+  color: white;
+  padding: 150px;
+
+  .aboutus-wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width:768px) {
+    font-size: 18px;
+    padding: 20px;
+
+    .aboutus-wrapper {
+      width: 90%;
+    }
+  }
+}
+
+////////////////
+
+
+/////// contact us //////
+
+.contactus {
+  background-color: #444;
+  font-size: 24px;
+  color: white;
+  padding: 100px;
+
+  @media screen and (max-width:768px) {
+    padding: 20px 0 0 0;
+  }
+
+  .form-wrapper {
+    margin: 0 auto;
+    width: 50%;
+
+    input {
+      width: 50%;
+    }
+    textarea {
+      width: 100%;
+    }
+
+    input, textarea {
+      margin-bottom: 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      color: #666260;
+      border: 1px solid #c4beb9;
+      background: #fff;
+      padding: 1em;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button {
+      font-size: .707em;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .1em;
+      border: 1px solid #103742;
+      background-color: #103742;
+      color: #f2f2ee;
+      padding: 0.832em 1.414em 0.707em;
+    }
+
+    @media screen and (max-width:768px) {
+      width: 90%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/////////////

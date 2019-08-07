@@ -1,20 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../../App.scss';
 import Facebook from '../../assets/facebook.png';
 import Twitter from '../../assets/twitter.png';
 import Youtube from '../../assets/youtube-logo.png';
 
-export default class SocialLinks extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-
-  }
-
-  render() {
+const SocialLinks = props => {
 
     return (
       <section className="section-small-padding background-dark text-center">
@@ -36,5 +26,6 @@ export default class SocialLinks extends Component {
         </div>
       </section>
     )
-  };
 }
+
+export default SocialLinks;

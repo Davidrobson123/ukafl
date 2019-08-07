@@ -6,14 +6,6 @@ import SocialLinks from "./SocialLinks";
 
 export default class MainPromo extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-
-  }
-
   _onReady(event) {
     event.target.playVideo();
   }
