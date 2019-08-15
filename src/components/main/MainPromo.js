@@ -21,7 +21,7 @@ export default class MainPromo extends Component {
     return (
       <div>
         <div className="section-top-padding background-image text-center front-video">
-          <h1 className="text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40">United Kingdom <br /> American Football League</h1>
+          <h1 className="text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40">United Kingdom <br /> American Football Live</h1>
             <div className="margin-top-20 center intro-vid">
             <YouTube
                 videoId="tHMrtV0txh0"
