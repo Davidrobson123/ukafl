@@ -29,8 +29,11 @@ export default class Standings extends Component {
 
                 <PageHeader title="Standings / Fixtures"/>
 
-                <div className="league-standings">
-                    <div id="lrep775328754">Data Loading...</div>
+                {/*<div className="league-standings">*/}
+                    {/*<div id="lrep775328754">Data Loading...</div>*/}
+                {/*</div>*/}
+                <div className="posts">
+                <h1 className="text-white text-size-60 text-m-size-30 margin-bottom-20 text-center"><b>COMING</b> SOON...</h1>
                 </div>
 
                 <Sponsors/>

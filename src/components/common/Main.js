@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.scss';
-import LatestPosts from "../main/LatestPosts";
+// import LatestPosts from "../main/LatestPosts";
+import Videos from "../main/Videos";
 import MainPromo from "../main/MainPromo";
 import SocialLinks from "../main/SocialLinks";
 import Sponsors from "../main/Sponsors";
@@ -15,7 +16,9 @@ const Main = props => {
 
           <MainPromo/>
 
-          <LatestPosts/>
+          {/*<LatestPosts/>*/}
+          <Videos />
+
 
           <Sponsors/>
 
