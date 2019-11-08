@@ -32,14 +32,26 @@ function Header() {
           </div>
 
           <ul className="logo-menu">
-            <a href="index.html" className="logo">
+            <a href="#" className="logo">
               <img className="logo-white" src={logo} alt="" />
                 <img className="logo-dark" src={logodark} alt="" />
             </a>
           </ul>
           <div className="top-nav right-menu">
             <ul className={`top-ul chevron ${mobileNav.show ? "show-menu" : ""}`}>
-              <li><a href="/standings">Standings</a></li>
+              <li>
+                <ul className="top-ul chevron">
+                  <li>
+                    <a>Standings</a>
+                    <ul>
+                      <li><a href="/standings-bucs-prem">BUCS Premier Division</a></li>
+                      <li><a href="/standings-bucs-1">BUCS Division One</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
